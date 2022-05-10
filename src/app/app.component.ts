@@ -8,15 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'meetup-pipe';
 
-
-  ngOninit() {
-
-    try {
-      [].forEach(item => console.log(item));
-    } catch (error) {
-      throw new Error("this.is an error");
-    }
-
-    
+  info(value: string): string {
+    return value;
   }
 }

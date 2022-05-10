@@ -26,10 +26,21 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('meetup-pipe');
   });
 
-  it('should render title', () => {
+  it(`should have as title 'meetup-pipe'`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+
+    const info = 'this is a test';
+
+    expect(app.info(info)).toEqual(info);
+  });
+
+  /*it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('.content span')?.textContent).toContain('meetup-pipe app is running!');
-  });
+  });*/
+
+
 });
