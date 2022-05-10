@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'meetup-pipe';
+
+  info(value: string): string {
+    return value;
+  }
+
+
+  info1(value: string): string {
+    return value;
+  }
 }
