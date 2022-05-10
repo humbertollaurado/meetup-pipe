@@ -11,4 +11,9 @@ export class AppComponent {
   info(value: string): string {
     return value;
   }
+
+
+  info1(value: string): string {
+    return value;
+  }
 }
